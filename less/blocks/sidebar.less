@@ -1,0 +1,27 @@
+.sidebar {
+  width: 270px;
+  padding: 20px;
+  background-color: @grey-bg;
+}
+
+.sidebar__item {
+  a {
+    font-size: 18px;
+    color: @normal;
+    transition: ease-out 0.3s;
+    
+    &:hover,
+    &:active {
+      color: @green;
+      transition: ease-out 0.3s;
+    }
+  }
+}
+
+.sidebar__subitem {
+  padding-left: 20px;
+  
+  a {
+    font-size: 16px;
+  }
+}

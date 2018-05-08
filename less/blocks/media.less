@@ -15,6 +15,9 @@
   .pets {
     max-height: 654px;
   }
+  .article {
+    width: 670px;
+  }
 }
 
 //--------------------------------
@@ -86,6 +89,21 @@
     width: 50%;
     height: 250px;
   }
+  .wrapper--internal {
+    margin-top: 0;
+    padding-top: 30px;
+    display: block;
+  }
+  .article {
+    width: 100%;
+    padding: 20px;
+  }
+  .sidebar {
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    background-color: #fff;
+  }
 }
 
 //-------------------------
@@ -100,7 +118,7 @@
 }
 
 //--------------------------
-@media (max-width: 480px) {
+@media (max-width: 500px) {
   .logo p {
     font-size: 24px;
   }
@@ -158,5 +176,12 @@
     font-size: 36px;
     line-height: 1.2;
     margin-bottom: 20px;
+  }
+  .sidebar {
+    float: none;
+    width: 100%;
+  }
+  .article {
+    width: 100%;
   }
 }
