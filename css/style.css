@@ -447,6 +447,9 @@ button {
   background-position: center;
   background-size: cover;
 }
+.header--internal {
+  min-height: 440px;
+}
 .header__link {
   display: block;
   margin-left: auto;
@@ -478,6 +481,19 @@ button {
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
+}
+.wrapper--internal {
+  margin-top: -130px;
+  margin-bottom: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 .logo {
   max-width: 430px;
@@ -931,6 +947,62 @@ button {
 .social__link--fb:active {
   background-image: url(../img/icon-facebook-white.svg);
 }
+.sidebar {
+  width: 270px;
+  padding: 20px;
+  background-color: #f4f4f4;
+}
+.sidebar__item a {
+  font-size: 18px;
+  color: #242424;
+  -webkit-transition: ease-out 0.3s;
+  transition: ease-out 0.3s;
+}
+.sidebar__item a:hover,
+.sidebar__item a:active {
+  color: #25A188;
+  -webkit-transition: ease-out 0.3s;
+  transition: ease-out 0.3s;
+}
+.sidebar__subitem {
+  padding-left: 20px;
+}
+.sidebar__subitem a {
+  font-size: 16px;
+}
+.article {
+  width: 870px;
+  padding: 20px 49px;
+  background-color: #f4f4f4;
+}
+.breadcrumbs {
+  font-size: 12px;
+  color: #242424;
+}
+a.breadcrumbs__link {
+  position: relative;
+  margin-right: 20px;
+  color: #242424;
+  -webkit-transition: ease-out 0.3s;
+  transition: ease-out 0.3s;
+}
+a.breadcrumbs__link::after {
+  content: "/";
+  position: absolute;
+  bottom: 2px;
+  right: -12px;
+  line-height: 1;
+}
+a.breadcrumbs__link:hover,
+a.breadcrumbs__link:active {
+  color: #25A188;
+  -webkit-transition: ease-out 0.3s;
+  transition: ease-out 0.3s;
+}
+a.breadcrumbs__link:hover::after,
+a.breadcrumbs__link:active::after {
+  color: #242424;
+}
 @media (max-width: 1200px) {
   .wrapper {
     width: 100%;
@@ -949,6 +1021,9 @@ button {
   }
   .pets {
     max-height: 654px;
+  }
+  .article {
+    width: 670px;
   }
 }
 @media (max-width: 1022px) {
@@ -1028,6 +1103,21 @@ button {
     width: 50%;
     height: 250px;
   }
+  .wrapper--internal {
+    margin-top: 0;
+    padding-top: 30px;
+    display: block;
+  }
+  .article {
+    width: 100%;
+    padding: 20px;
+  }
+  .sidebar {
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    background-color: #fff;
+  }
 }
 @media (max-width: 766px) {
   .gallery__photo {
@@ -1041,7 +1131,7 @@ button {
     text-align: center;
   }
 }
-@media (max-width: 480px) {
+@media (max-width: 500px) {
   .logo p {
     font-size: 24px;
   }
@@ -1100,5 +1190,12 @@ button {
     font-size: 36px;
     line-height: 1.2;
     margin-bottom: 20px;
+  }
+  .sidebar {
+    float: none;
+    width: 100%;
+  }
+  .article {
+    width: 100%;
   }
 }
