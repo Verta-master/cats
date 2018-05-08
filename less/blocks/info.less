@@ -1,0 +1,42 @@
+.info {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  color: #fff;
+  text-align: center;
+  font-size: 18px;
+  background-color: @grey-bg;
+  background-image: url(../img/parallax2_4.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  
+  .title {
+    text-align: center;
+  }
+}
+
+.info__list {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.info__item {
+  width: 30%;
+}
+
+.info__title {
+  font-weight: 700;
+  
+  a {
+    color: @yellow;
+    transition: ease-out 0.3s;
+    
+    &:hover,
+    &:active {
+      color: @green;
+      transition: ease-out 0.3s;
+    }
+  }
+}
