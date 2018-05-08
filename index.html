@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
-  <header class="header">
+  <header class="header paroller">
     <div class="wrapper">
       <a href="tel:+71234567890" class="header__link">8(123)456-78-90</a>
       <a href="mailto:site@site.site" class="header__link">site@site.site</a>
@@ -34,7 +34,7 @@
       </div>
     </section>
     
-    <section class="info">
+    <section class="info paroller">
       <div class="wrapper">
         <p class="title">Полезная информация</p>
         <ul class="info__list">
@@ -160,6 +160,7 @@
   </footer>
   
   <script src="js/jquery-3.2.1.min.js"></script>
+  <script src="js/jquery.paroller.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.2.2/js/swiper.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.js"></script>
   
@@ -173,6 +174,15 @@
       simulateTouch: false,
       preventClicks: false,
       preventClicksPropagation: false,
+    });
+  </script>
+  
+  <!-- Parallax -->
+  <script>
+    $(".paroller, [data-paroller-factor]").paroller({
+      factor: 0.15,
+      type: 'background',
+      direction: 'vertical',
     });
   </script>
 </body>
